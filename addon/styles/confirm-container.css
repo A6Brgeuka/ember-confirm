@@ -10,7 +10,8 @@
   z-index: 10000;
 }
 
-.confirm-dialog-hidden {
+.confirm-container-hidden {
   transition-delay: .1s;
   transform: scale(0);
+  z-index: -1;
 }

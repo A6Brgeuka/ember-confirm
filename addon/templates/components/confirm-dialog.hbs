@@ -7,6 +7,8 @@
   </div>
   <div class="confirm-dialog-control">
     <button {{action 'click' true}} class="ok" style={{okStyle}}>{{ok}}</button>
-    <button {{action 'click'}} class="cancel">{{cancel}}</button>
+    {{#if notOneButton}}
+      <button {{action 'click'}} class="cancel">{{cancel}}</button>
+    {{/if}}
   </div>
 </div>

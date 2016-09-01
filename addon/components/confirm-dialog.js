@@ -6,12 +6,13 @@ export default Component.extend({
   layout,
   tagName: 'div',
   classNames: ['confirm-container'],
-  classNameBindings: ['isDialogHidden:confirm-dialog-hidden'],
+  classNameBindings: ['isDialogHidden:confirm-container-hidden'],
   confirm: service(),
 
   options: computed.reads('confirm.options'),
   isDialogVisible: computed.alias('confirm.isShow'),
   isDialogHidden: computed.not('confirm.isShow'),
+  notOneButton: computed.not('options.oneButton'),
 
   stateClass: computed('isDialogVisible', function () {
     return !this.get('isDialogVisible')? 'confirm-dialog-hidden': '';

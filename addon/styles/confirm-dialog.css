@@ -8,7 +8,7 @@
   flex-direction: column;
   text-align: center;
   transition: all .1s linear;
-  word-break: break-all;
+  word-wrap: break-word;
   padding: 25px;
 }
 
