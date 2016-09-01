@@ -1,0 +1,12 @@
+<div class="confirm-dialog {{stateClass}}">
+  <div class="confirm-dialog-title">
+    {{options.title}}
+  </div>
+  <div class="confirm-dialog-message">
+    <span>{{options.message}}</span>
+  </div>
+  <div class="confirm-dialog-control">
+    <button {{action 'click' true}} class="ok" style={{okStyle}}>{{ok}}</button>
+    <button {{action 'click'}} class="cancel">{{cancel}}</button>
+  </div>
+</div>
